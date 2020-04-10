@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Players from './components/Players';
 import axios from 'axios';
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   constructor() {
@@ -25,6 +26,7 @@ class App extends React.Component {
     render() {
       return (
           <div className = 'App'>
+            <Navbar />
             <h1>Women's World Cup Players</h1>
               {this.state.data.map(item => {
                   return <Players user={item} />;

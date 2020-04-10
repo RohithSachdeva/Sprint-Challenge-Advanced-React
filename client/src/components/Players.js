@@ -1,19 +1,16 @@
 import React from 'react';
-import axios from 'axios';
+
 
 export default function Players(props) {
-     console.log(props);
-  
+    console.log(props);
+
     return (
-      <div>
-        <h2>
-          {props.user.name} 
-          <br></br>
-          {props.user.country}
-        </h2>
-        <p>{props.user.searches}</p>
-      </div>
+        <div className='box'>
+            <h2>{props.user.name}</h2>
+            <h3>{props.user.country}</h3>
+            <h4>{props.user.searches}</h4>
+        </div>
     );
-  }
-  
+}
+
 
